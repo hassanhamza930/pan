@@ -5,15 +5,25 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { MdArrowDropDown, MdClose } from "react-icons/md"
 import { GiCrossMark, GiHamburgerMenu } from "react-icons/gi";
 import Button, { ButtonWhite } from "./button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 function Header() {
 
+    const [mobile, setmobile] = useState(false);
     const [headerOpen, setheaderOpen] = useState(false);
 
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            if (window.innerWidth < 1280) {
+                setmobile(true);
+            }
+        })
+    }, [])
+
+
     return (
-        window.innerWidth < 1280 ?
+        mobile ?
             <>
             <AnimatePresence>
                 {
