@@ -36,7 +36,7 @@ function Roadmap() {
     return (
         <div className="h-full w-full bg-blue relative z-10 flex justify-start items-center flex-col p-10">
             <div className="text-tan font-medium text-xl mt-10">ROADMAP</div>
-            <div className="text-tan font-bold text-5xl md:text-6xl mt-10 text-center">Where we're going,<br />We don't need roads.</div>
+            <div id="roadmap" className="text-tan font-bold text-5xl md:text-6xl mt-10 text-center">Where we're going,<br />We don't need roads.</div>
             <div className="flex flex-wrap justify-center items-center mt-16 gap-5 md:gap-10">
                 <RoadmapCard index={0} icon={<AiOutlineHeart size={35} />} title="1. Create" />
                 <RoadmapCard index={1} icon={<AiOutlineRocket size={35} />} title="2. Stealth Launch" />

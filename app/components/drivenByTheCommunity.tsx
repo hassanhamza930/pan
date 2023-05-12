@@ -59,8 +59,8 @@ function DrivenByTheCommunity() {
     return (
         <div className="h-full w-full bg-tan relative z-10 flex justify-start items-center flex-col p-10 pb-24">
             <div className="text-black font-medium text-md md:text-xl mt-10">Driven by the community</div>
-            <div className="text-black font-bold text-5xl md:text-6xl mt-5 md:mt-10 text-center">Expect Nothing<br />Expect Surprises.</div>
-            <div className="flex flex-col md:flex-row justify-center items-start mt-16 gap-10 px-[10%]">
+            <div id="dao"  className="text-black font-bold text-5xl md:text-6xl mt-5 md:mt-10 text-center">Expect Nothing<br />Expect Surprises.</div>
+            <div  className="flex flex-col md:flex-row justify-center items-start mt-16 gap-10 px-[10%]">
                 <CommunityCard description={testingArr} title="Launch and promotion" />
                 <CommunityCard description={testingArr} title="Community Building & Expansion" />
                 <CommunityCard description={testingArr} title="Long-Term Sustainability and Growth" />
