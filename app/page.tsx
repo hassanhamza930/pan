@@ -21,8 +21,7 @@ export default function Home() {
         <ASimpleMission/>
         <Roadmap/>
         <DrivenByTheCommunity/>
-        
-
+      
     </div>
   )
 }

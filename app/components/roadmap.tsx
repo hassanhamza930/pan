@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { ReactElement } from "react";
 import { AiOutlineHeart, AiOutlineRocket, AiOutlineBarChart, AiOutlineArrowUp } from "react-icons/ai";
+import peter2 from "../images/peter2.png";
 
 interface RoadmapCardProps {
     title: string,
@@ -44,7 +45,7 @@ function Roadmap() {
             </div>
 
             <div className="h-96 md:h-screen w-full mt-10 md:p-20 flex justify-center items-center">
-                <div className="w-full md:w-3/4 h-full bg-tan rounded-xl">
+                <div style={{ backgroundImage: `url('${peter2.src}')` }} className="bg-cover bg-center w-full md:w-3/4 h-full bg-tan rounded-xl">
 
                 </div>
             </div>

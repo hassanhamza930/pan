@@ -1,6 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import peter2 from "../images/peter2.png";
+import dynamic from "next/dynamic";
+
 
 interface CommunityCardProps {
     title: string,
@@ -11,7 +14,7 @@ function CommunityCard(props: CommunityCardProps) {
     return (
         <div className="text-black w-full h-full p-10 rounded-2xl bg-blue/[0.05]">
             <div className="flex flex-row justify-start gap-5 items-center">
-                <div className="flex-none h-12 w-12 rounded-full bg-blue"></div>
+                <div style={{ backgroundImage: `url('${peter2.src}')` }} className="bg-cover bg-center flex-none h-12 w-12 rounded-full bg-blue"></div>
                 <div className="text-3xl font-medium">{props.title}</div>
             </div>
             <div className="flex text-md flex-col mt-5 gap-3 justify-start items-start">
