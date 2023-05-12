@@ -18,6 +18,9 @@ function Header() {
             if (window.innerWidth < 1280) {
                 setmobile(true);
             }
+            else{
+                setmobile(false);
+            }
         })
     }, [])
 
