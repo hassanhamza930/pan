@@ -22,7 +22,7 @@ function FeatureCard(props: FeatureCardProps) {
         }}
         transition={{duration:1}}
         whileInView={"visible"}
-        className="w-96 h-64 border-blue rounded-md text-blue p-5">
+        className="w-full md:w-64 h-full md:h-64 border-blue rounded-md text-blue p-5">
             {props.icon}
             <div className="text-3xl mt-5 font-regular">{props.title}</div>
             <div className="text-md mt-4 font-regular">{props.description}</div>
@@ -35,15 +35,14 @@ function FeatureCard(props: FeatureCardProps) {
 function Features() {
     return (
         <>
-            <div className="h-screen w-full">
+            <div className="h-screen w-full"></div>
 
-            </div>
-            <div className="bg-tan relative border-t-8 border-purp z-10 h-[800px] w-full flex flex-row justify-center items-center">
+            <div className="bg-tan relative border-t-8 border-purp z-10 h-full md:h-[800px] w-full flex flex-col-reverse  gap-24 md:flex-row justify-center items-center">
                 <motion.div
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 2, delay: 0.5 }}
-                    className="w-3/5 h-2/4 flex flex-wrap gap-5 justify-center items-center p-10">
+                    className="w-full md:w-3/5 h-full md:h-2/4 flex flex-wrap gap-10 justify-center items-center p-10">
 
                     <FeatureCard icon={<MdDesignServices size={50} />} title="Design" description="Launched stealth with no presale, zero taxes, LP burnt and contract renounced, $PAN is for the people -forever." />
                     <FeatureCard icon={<MdLightbulb size={50} />} title="Idea" description="It’s time for the most recognizable pan in the world to claim his rightful position on the charts at the start of a life changing bull market." />
@@ -53,8 +52,8 @@ function Features() {
                 </motion.div>
 
 
-                <div style={{ backgroundImage: `url('${peter2.src}')` }} className="h-[792px] w-2/5 text-tan flex bg-cover bg-center justify-center items-center">
-                    <div className="w-full h-full flex justify-center items-center">
+                <div style={{ backgroundImage: `url('${peter2.src}')` }} className="h-full md:h-[792px] w-full md:w-2/5 text-tan flex bg-cover bg-center justify-center items-center">
+                    <div className="w-full h-full flex justify-center items-center py-10 px-5">
                         <motion.div 
                         initial="hidden"
                         variants={{
@@ -63,7 +62,7 @@ function Features() {
                         }}
                         transition={{duration:1,delay:0.3}}
                         whileInView={"visible"}
-                        className="h-3/4 w-3/4 rounded-3xl text-center bg-blue/90 backdrop-blur-xl flex flex-col gap-2 justify-center items-center p-10">
+                        className="h-full md:h-3/4 w-full md:w-3/4 rounded-3xl text-center bg-blue/90 backdrop-blur-xl flex flex-col gap-2 justify-center items-center p-10">
                             <div className="text-xl font-medium">Built on Ethereum</div>
                             <div className="text-4xl font-medium">Buy $PAN</div>
                             <div className="text-xl font-medium mt-4">PAN is supported on popular<br />DeFi wallets like MetaMask</div>

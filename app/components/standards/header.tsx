@@ -17,7 +17,7 @@ function Header() {
                 PAN
             </div>
 
-            <div className="flex flex-row justify-center items-center gap-12">
+            <div className="hidden md:flex flex-row justify-center items-center gap-12">
                 <Link href="/" className="hover:text-purp hover:underline text-md transition-all duration-300">PAN Contract</Link>
                 <Link href="/" className="hover:text-purp hover:underline text-md transition-all duration-300">DAO</Link>
                 <Link href="/" className="hover:text-purp hover:underline text-md transition-all duration-300 flex flex-row justify-center items-center gap-1">

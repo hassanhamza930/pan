@@ -29,7 +29,7 @@ function Facts() {
              }}
              transition={{duration:1,delay:0.5}}
              whileInView={"visible"}
-            className="font-bold text-8xl text-black mt-36">PAN is for <span className="text-purp italic">you</span></motion.div>
+            className="font-bold text-6xl md:text-8xl text-center text-black mt-24 md:mt-36">PAN is for <span className="text-purp italic">you</span></motion.div>
             <motion.div 
              initial="hidden"
              variants={{
@@ -38,7 +38,7 @@ function Facts() {
              }}
              transition={{duration:1,delay:0.7}}
              whileInView={"visible"}
-            className="text-xl font-medium text-black mt-10 mb-24">No taxes, no nonsense. Simple tokenomics to make PAN sustainable long term.</motion.div>
+            className="text-md px-10 md:text-xl font-medium text-black mt-10 mb-24 text-center">No taxes, no nonsense. Simple tokenomics to make PAN sustainable long term.</motion.div>
 
             <motion.div
              initial="hidden"
@@ -48,26 +48,26 @@ function Facts() {
              }}
              transition={{duration:1,delay:0.3}}
              whileInView={"visible"}
-            className="flex flex-row justify-center items-start w-full mb-48 px-[15%]">
+            className="flex flex-col md:flex-row justify-center items-start w-full mb-48 px-5 md:px-[15%]">
 
-                <div className="flex-none flex-col justify-center items-center h-[500px] w-[500px] bg-blue">picture</div>
-                <div className="flex flex-col h-[500px] justify-center w-full items-end p-5">
+                <div className="flex-none flex-col justify-center items-center h-96 w-full md:h-[500px] md:w-[500px] bg-blue">picture</div>
+                <div className="flex flex-col h-full md:h-[500px] justify-center w-full items-end p-5">
                     
-                    <div className="text-3xl font-regular text-right mt-5">
+                    <div className="text-xl md:text-3xl font-regular text-right mt-5">
                         <div className="font-bold">420,690,000,000,000</div>
-                        <div className="font-regular text-2xl">Total Supply</div>
+                        <div className="font-regular text-md md:text-2xl">Total Supply</div>
                         <div className="w-full h-[2px] bg-black/40 my-5"></div>
                     </div>
 
-                    <div className="text-3xl text-right mt-5">
+                    <div className="text-xl md:text-3xl text-right mt-5">
                         <div className="font-bold">95%</div>
-                        <div className="font-regular text-2xl">Locked Forever</div>
+                        <div className="font-regular text-md md:text-2xl">Locked Forever</div>
                         <div className="w-full h-[2px] bg-black/40 my-5"></div>
                     </div>
 
-                    <div className="text-3xl text-right mt-5">
+                    <div className="text-xl md:text-3xl text-right mt-5">
                         <div className="font-bold">100%</div>
-                        <div className="font-regular text-2xl">Community Driven</div>
+                        <div className="font-regular text-md md:text-2xl">Community Driven</div>
                         <div className="w-full h-[2px] bg-black/40 my-5"></div>
                     </div>
 
