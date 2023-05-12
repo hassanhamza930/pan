@@ -48,7 +48,7 @@ function Facts() {
              }}
              transition={{duration:1,delay:0.3}}
              whileInView={"visible"}
-            className="flex flex-col md:flex-row justify-center items-start w-full mb-48 px-5 md:px-[15%]">
+            className="flex flex-col md:flex-row justify-center items-start w-full pb-12 md:mb-48 px-5 md:px-[15%]">
 
                 <div className="flex-none flex-col justify-center items-center h-96 w-full md:h-[500px] md:w-[500px] bg-blue">picture</div>
                 <div className="flex flex-col h-full md:h-[500px] justify-center w-full items-end p-5">

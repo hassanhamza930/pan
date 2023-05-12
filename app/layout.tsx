@@ -1,3 +1,4 @@
+import Footer from './components/standards/footer'
 import Header from './components/standards/header'
 import './globals.css'
 import { DM_Sans } from 'next/font/google'
@@ -16,6 +17,7 @@ export default function RootLayout({ children, }: { children: React.ReactNode })
         <Header />
         <div className=''>
           {children}
+          <Footer/>
         </div>
       </body>
     </html>

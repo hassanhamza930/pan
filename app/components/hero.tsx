@@ -26,7 +26,7 @@ function Hero() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: 1.5 }}
                 className='relative z-10 tracking-tighter text-4xl md:text-7xl font-bold'>
-                    The Coin from Neverland!
+                    The Coin that never grows!
                 </motion.div>
                 <motion.div
                     initial={{ y: 90, opacity: 0 }}
